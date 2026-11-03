@@ -1,89 +1,139 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Produtos</title>
 </head>
 <body>
 
     <header>
         <h1>Produtos</h1>
-        <nav>
-            <a href="index.html">Início</a> |
-            <a href="sobre.html">Sobre</a> |
-            <a href="produtos.html">Produtos</a> |
-            <a href="servicos.html">Serviços</a> |
-            <a href="contate-nos.html">Contate-nos</a> |
-            <a href="parceiros.html">Parceiros</a> |
-            <a href="portfolio.html">Portfólio</a> |
-            <a href="ouvidoria.html">Ouvidoria</a>
-        </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Quais são</h2>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contate-nos.html">Contate-nos</a>
+        <a href="parceiros.html">Parceiros</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="ouvidoria.html">Ouvidoria</a>
+    </nav>
+
+    <div class="container">
+
+        <aside>
+            <h3>Menu Lateral</h3>
+            <p>Opções secundárias</p>
+
             <ul>
-                <li>Os produtos representam uma parte essencial de uma empresa, pois são uma das principais formas pelas quais o negócio se conecta com os clientes.</li>
-                <li>Antes de colocar um produto no mercado, a empresa precisa realizar um planejamento. É importante estudar o público-alvo e a concorrência.</li>
-                <li>O desenvolvimento de um produto envolve várias etapas. Primeiro, é necessário ter uma ideia e definir qual será sua utilidade.</li>
-                <li>A escolha dos materiais utilizados também pode influenciar diretamente a qualidade do produto. Materiais adequados garantem maior durabilidade.</li>
-                <li>Outro aspecto importante é o design. A aparência de um produto pode chamar a atenção dos consumidores e ajudar a destacar a marca.</li>
-                <li>A embalagem também possui uma função importante. Além de proteger o produto durante o armazenamento e o transporte, ela contribui para a apresentação.</li>
-                <li>A empresa precisa ainda estabelecer um preço adequado para seus produtos. Para isso, deve considerar os custos envolvidos e a aceitação do mercado.</li>
-                <li>A divulgação é outro fator importante para o sucesso de um produto. Mesmo que um produto tenha boa qualidade, os consumidores precisam conhecê-lo.</li>
-                <li>O atendimento ao cliente também está relacionado aos produtos. Quando o consumidor possui dúvidas, ter um canal de atendimento rápido ajuda na confiança.</li>
-                <li>Além disso, ouvir os consumidores é fundamental para melhorar os produtos. Comentários, avaliações e sugestões ajudam a aprimorar.</li>
-                <li>A inovação também tem grande importância nesse processo. As empresas precisam acompanhar as mudanças no comportamento do mercado.</li>
-                <li>Os produtos também possuem relação direta com a imagem da empresa. Quando uma empresa oferece produtos confiáveis, ela ganha mercado.</li>
+                <li><a href="index.html">Página inicial</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
             </ul>
-        </section>
+        </aside>
 
-        <section>
-            <h2>Catálogo de Produtos</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Imagem</th>
-                        <th>Produto</th>
-                        <th>Preço</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="mouse sem fio.jpg" alt="Mouse Sem Fio" width="80"></td>
-                        <td>Mouse Sem Fio</td>
-                        <td>R$ 80,00</td>
-                    </tr>
-                    <tr>
-                        <td><img src="teclado mecanico.jpg" alt="Teclado Mecânico" width="80"></td>
-                        <td>Teclado Mecânico</td>
-                        <td>R$ 200,00</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <main>
 
-        <section>
-            <h2>Solicitação de Compra</h2>
-            <form>
-                <label for="cliente">Nome:</label><br>
-                <input type="text" id="cliente" name="cliente" required><br><br>
+            <section>
+                <h2>Quais são</h2>
 
-                <label for="item">Escolha o item:</label><br>
-                <select id="item" name="produto">
-                    <option value="prod1">Mouse Sem Fio</option>
-                    <option value="prod2">Teclado Mecânico</option>
-                </select><br><br>
+                <ul>
+                    <li>Os produtos representam uma parte essencial de uma empresa, pois são uma das principais formas pelas quais o negócio se conecta com os clientes.</li>
 
-                <label for="qtd">Quantidade:</label><br>
-                <input type="number" id="qtd" name="qtd" min="1" value="1"><br><br>
+                    <li>Antes de colocar um produto no mercado, a empresa precisa realizar um planejamento. É importante estudar o público-alvo e a concorrência.</li>
 
-                <button type="submit">Finalizar Pedido</button>
-            </form>
-        </section>
-    </main>
+                    <li>O desenvolvimento de um produto envolve várias etapas. Primeiro, é necessário ter uma ideia e definir qual será sua utilidade.</li>
+
+                    <li>A escolha dos materiais utilizados também pode influenciar diretamente a qualidade do produto. Materiais adequados garantem maior durabilidade.</li>
+
+                    <li>Outro aspecto importante é o design. A aparência de um produto pode chamar a atenção dos consumidores e ajudar a destacar a marca.</li>
+
+                    <li>A embalagem também possui uma função importante. Além de proteger o produto durante o armazenamento e o transporte, ela contribui para a apresentação.</li>
+
+                    <li>A empresa precisa ainda estabelecer um preço adequado para seus produtos. Para isso, deve considerar os custos envolvidos e a aceitação do mercado.</li>
+
+                    <li>A divulgação é outro fator importante para o sucesso de um produto. Mesmo que um produto tenha boa qualidade, os consumidores precisam conhecê-lo.</li>
+
+                    <li>O atendimento ao cliente também está relacionado aos produtos. Quando o consumidor possui dúvidas, ter um canal de atendimento rápido ajuda na confiança.</li>
+
+                    <li>Além disso, ouvir os consumidores é fundamental para melhorar os produtos. Comentários, avaliações e sugestões ajudam a aprimorar.</li>
+
+                    <li>A inovação também tem grande importância nesse processo. As empresas precisam acompanhar as mudanças no comportamento do mercado.</li>
+
+                    <li>Os produtos também possuem relação direta com a imagem da empresa. Quando uma empresa oferece produtos confiáveis, ela ganha mercado.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Catálogo de Produtos</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Imagem</th>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="mouse sem fio.jpg"
+                                     alt="Mouse sem fio" width="80">
+                            </td>
+                            <td>Mouse Sem Fio</td>
+                            <td>R$ 80,00</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="teclado mecanico.jpg"
+                                     alt="Teclado mecânico" width="80">
+                            </td>
+                            <td>Teclado Mecânico</td>
+                            <td>R$ 200,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2>Solicitação de Compra</h2>
+
+                <form>
+                    <label for="cliente">Nome:</label>
+                    <br>
+                    <input type="text" id="cliente"
+                           name="cliente" required>
+                    <br><br>
+
+                    <label for="item">Escolha o item:</label>
+                    <br>
+                    <select id="item" name="produto">
+                        <option value="prod1">Mouse Sem Fio</option>
+                        <option value="prod2">Teclado Mecânico</option>
+                    </select>
+                    <br><br>
+
+                    <label for="qtd">Quantidade:</label>
+                    <br>
+                    <input type="number" id="qtd" name="qtd"
+                           min="1" value="1">
+                    <br><br>
+
+                    <button type="submit">Finalizar Pedido</button>
+                </form>
+            </section>
+
+        </main>
+
+    </div>
 
     <footer>
         <p>&copy; 2026 - Todos os direitos reservados.</p>
@@ -92,8 +142,3 @@
 
 </body>
 </html>
-
-
-
-
-  

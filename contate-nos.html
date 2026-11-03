@@ -1,48 +1,78 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Contate-nos</title>
 </head>
 <body>
 
     <header>
         <h1>Contate-nos</h1>
-        <nav>
-            <a href="index.html">Início</a> |
-            <a href="sobre.html">Sobre</a> |
-            <a href="produtos.html">Produtos</a> |
-            <a href="servicos.html">Serviços</a> |
-            <a href="contate-nos.html">Contate-nos</a> |
-            <a href="parceiros.html">Parceiros</a> |
-            <a href="portfolio.html">Portfólio</a> |
-            <a href="ouvidoria.html">Ouvidoria</a>
-        </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Telefone de Contato</h2>
-            <h3>+55 1234-5678</h3>
-        </section>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contate-nos.html">Contate-nos</a>
+        <a href="parceiros.html">Parceiros</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="ouvidoria.html">Ouvidoria</a>
+    </nav>
 
-        <section>
-            <h2>Entre em Contato</h2>
-            <form>
-                <label for="nome">Nome Completo:</label><br>
-                <input type="text" id="nome" name="nome" required><br><br>
+    <div class="container">
 
-                <label for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+        <aside>
+            <h3>Menu Lateral</h3>
+            <p>Opções secundárias</p>
 
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" rows="4"></textarea><br><br>
+            <ul>
+                <li><a href="index.html">Página inicial</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="ouvidoria.html">Ouvidoria</a></li>
+            </ul>
+        </aside>
 
-                <button type="submit">Enviar Mensagem</button>
-            </form>
-        </section>
-    </main>
+        <main>
+
+            <section>
+                <h2>Telefone de Contato</h2>
+                <h3>+55 1234-5678</h3>
+            </section>
+
+            <section>
+                <h2>Entre em Contato</h2>
+
+                <form>
+                    <label for="nome">Nome Completo:</label>
+                    <br>
+                    <input type="text" id="nome"
+                           name="nome" required>
+                    <br><br>
+
+                    <label for="email">E-mail:</label>
+                    <br>
+                    <input type="email" id="email"
+                           name="email" required>
+                    <br><br>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <br>
+                    <textarea id="mensagem" name="mensagem"
+                              rows="4"></textarea>
+                    <br><br>
+
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </section>
+
+        </main>
+
+    </div>
 
     <footer>
         <p>&copy; 2026 - Todos os direitos reservados.</p>
@@ -51,6 +81,7 @@
 
 </body>
 </html>
+
 
 
 

@@ -1,0 +1,9 @@
+for numero in range(2, 1001):
+    soma = 0
+
+    for i in range(1, numero):
+        if numero % i == 0:
+            soma += i
+
+    if soma == numero:
+        print(numero)

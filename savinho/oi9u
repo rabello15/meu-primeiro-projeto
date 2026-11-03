@@ -1,0 +1,7 @@
+nome =input("Qual é o seu nome? ")
+print(f"Olá, {nome}! Prazer em te conhecer.")
+print("Vamos fazer algumas perguntas para te conhecer melhor.")
+pergunta1 = input("Qual é a sua idade? ")
+pergunta2 = input("Qual é a sua altura? ")
+pergunta3 = input("Qual é a sua profissão? ")
+print(f"Então, você tem {pergunta1} anos, mede {pergunta2} e trabalha como {pergunta3}.")

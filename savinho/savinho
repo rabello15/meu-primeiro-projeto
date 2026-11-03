@@ -1,0 +1,8 @@
+nota=int(input("Digite a nota do aluno: "))
+frequencia=int(input("Digite a frequência do aluno: "))
+
+if(nota>=7) and (frequencia>=75):
+    print("Aprovado")
+else:
+    print("Reprovado")
+    

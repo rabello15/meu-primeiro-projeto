@@ -1,0 +1,218 @@
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7ef;
+    color: #333;
+}
+
+/* CABEÇALHO */
+header {
+    background-color: #fffafa;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #550385;
+    margin: 0;
+}
+
+/* MENU DE NAVEGAÇÃO */
+nav {
+    background-color: #550385;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #dddddd;
+    color: #000;
+}
+
+/* CONTAINER COM MENU LATERAL E CONTEÚDO */
+.container {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+/* MENU LATERAL */
+aside {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    width: 75%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000015;
+}
+
+h2 {
+    color: #550385;
+}
+
+h3 {
+    color: #28623b;
+}
+
+/* IMAGENS */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* FORMULÁRIOS */
+form {
+    margin-top: 15px;
+}
+
+label {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+}
+
+button,
+input[type="submit"] {
+    background-color: #550385;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #dddddd;
+    color: #000;
+}
+
+/* TABELAS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #550385;
+    color: white;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #550385;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+footer a {
+    color: white;
+}
+
+/* ADAPTAÇÃO PARA CELULARES */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    aside,
+    main {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+/* CENTRALIZAR O CONTEÚDO DE TODAS AS PÁGINAS */
+body > main {
+    max-width: 1100px;
+    width: calc(100% - 40px);
+    margin: 25px auto;
+    padding: 20px;
+}
+
+/* CENTRALIZAR O CONTEÚDO DAS SEÇÕES */
+section {
+    margin-bottom: 25px;
+}
+
+/* AJUSTAR O CONTEÚDO EM TELAS PEQUENAS */
+@media (max-width: 600px) {
+    body > main {
+        width: calc(100% - 30px);
+        margin: 15px auto;
+        padding: 15px;
+    }
+}
+
+/* CENTRALIZAR PORTFÓLIO E PARCEIROS */
+body > main,
+body > section,
+body > div > main {
+    max-width: 1100px;
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* AJUSTE PARA CELULARES */
+@media (max-width: 600px) {
+    body > main,
+    body > section,
+    body > div > main {
+        width: calc(100% - 30px);
+    }
+}
