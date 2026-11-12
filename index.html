@@ -36,6 +36,33 @@
         </aside>
 
         <main>
+            <h2>Baralho de Imagens (Camadas)</h2>
+<div class="baralho">
+    <!-- A 1ª imagem tem o z-index mais baixo (fica por baixo de todas) -->
+    <img src="boas vindas.jpg" class="carta" style="z-index: 1; top: 0px; left: 0px;" onclick="mostrarTodas()" alt="Carta 1">
+    <!-- As restantes vão subindo de nível (z-index) e desencostando um pouco -->
+    <img src="mouse sem fio.jpg" class="carta" style="z-index: 2; top: 15px; left: 15px;" onclick="esconderCarta(this)" alt="Carta 2">
+    <img src="teclado mecanico.jpg" class="carta" style="z-index: 3; top: 30px; left: 30px;" onclick="esconderCarta(this)" alt="Carta 3">
+    <img src="vontade.jpg" class="carta" style="z-index: 4; top: 45px; left: 45px;" onclick="esconderCarta(this)" alt="Carta 4">
+    <img src="boas vindas.jpg" class="carta" style="z-index: 5; top: 60px; left: 60px;" onclick="esconderCarta(this)" alt="Carta 5">
+    <img src="mouse sem fio.jpg" class="carta" style="z-index: 6; top: 75px; left: 75px;" onclick="esconderCarta(this)" alt="Carta 6">
+    <img src="teclado mecanico.jpg" class="carta" style="z-index: 7; top: 90px; left: 90px;" onclick="esconderCarta(this)" alt="Carta 7">
+</div>
+
+<script>
+    // Faz desaparecer a imagem clicada
+    function esconderCarta(elemento) {
+        elemento.style.display = 'none';
+    }
+
+    // Quando clicas na imagem do nível mais baixo (z-index: 1), todas voltam a aparecer
+    function mostrarTodas() {
+        let cartas = document.querySelectorAll('.carta');
+        cartas.forEach(function(carta) {
+            carta.style.display = 'block';
+        });
+    }
+</script>
             <section>
                 <h2>Bem-vindo ao nosso site!</h2>
 

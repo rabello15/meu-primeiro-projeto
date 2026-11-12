@@ -216,3 +216,89 @@ body > div > main {
         width: calc(100% - 30px);
     }
 }
+/* --- LAYOUT DO CONTAINER, ASIDE E MAIN (FIXO NA LATERAL) --- */
+
+.container {
+    display: flex;
+    width: 100%;
+    margin-top: 0;
+    max-width: none; /* Garante que ocupa a largura total para alinhar com o fixed */
+}
+
+aside {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    border-radius: 0; /* Remove cantos arredondados para colar direitinho à borda da tela */
+    box-sizing: border-box;
+    z-index: 100; /* Mantém o menu sempre acima dos outros elementos */
+}
+
+main {
+    width: 75%;
+    margin-left: 25%; /* Empurra o conteúdo exatamente para a direita, evitando qualquer corte */
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000015;
+    box-sizing: border-box;
+}
+
+/* --- AGRUPAMENTO EM CAMADAS (BARALHO DE IMAGENS) --- */
+.baralho {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.carta {
+    position: absolute;
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #550385;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.carta:hover {
+    transform: scale(1.03);
+}
+/* --- LAYOUT FIXO DO ASIDE E MAIN (GARANTE QUE NADA FICA CORTADO) --- */
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+main {
+    width: 75% !important;
+    margin-left: 25% !important; /* Força o conteúdo a saltar para a direita do aside fixo */
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000015;
+    box-sizing: border-box;
+}
