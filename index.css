@@ -302,18 +302,3 @@ main {
     box-shadow: 0 2px 8px #00000015;
     box-sizing: border-box;
 }
-/* Adaptação automática para telemóveis e telas pequenas */
-@media (max-width: 768px) {
-    /* O container passa a empilhar os elementos em coluna */
-    .container {
-        flex-direction: column;
-    }
-
-    /* O menu lateral deixa de ser fixo e ocupa a largura toda no topo */
-    aside {
-     aside {
-    position: relative !important; /* Aqui falta um dois-pontos (:) antes de important! */
-    width: 100% !important;
-    height: auto !important;
-    height: max-content !important;
-}
