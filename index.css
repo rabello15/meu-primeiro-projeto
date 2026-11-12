@@ -311,15 +311,9 @@ main {
 
     /* O menu lateral deixa de ser fixo e ocupa a largura toda no topo */
     aside {
-        position: relative !important;
-        width: 100% !important;
-        height: auto !important;
-        height: max-content !important;
-    }
-
-    /* O conteúdo principal perde a margem esquerda e ocupa a largura toda */
-    main {
-        width: 100% !important;
-        margin-left: 0 !important;
-    }
+     aside {
+    position: relative !important; /* Aqui falta um dois-pontos (:) antes de important! */
+    width: 100% !important;
+    height: auto !important;
+    height: max-content !important;
 }
